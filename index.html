@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+		<title>Wage Calculator</title>
+	</head>
+	<body>
+		<div class="container my-5">
+			<h1 class="mb-5">Wage Calculator</h1>
+			<div class="card mb-5">
+				<div class="card-body">
+					<div class="row">
+						<div class="col-6 mb-5">
+							<label class="form-label">Annual Wage:</label>
+							<div class="input-group">
+								<input class="form-control" type="number" id="wage" placeholder="Greater than 0">
+							</div>
+						</div>
+						<div class="col-6 mb-5">
+							<label class="form-label">Hours Per Day:</label>
+							<div class="input-group">
+								<input class="form-control" type="number" id="hours" placeholder="Greater than 0">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-3 mb-5">
+							<label class="form-label">Monthly:</label>
+							<div class="input-group">
+								<input class="form-control" type="number" id="monthly" readonly>
+							</div>
+						</div>
+						<div class="col-3 mb-5">
+							<label class="form-label">Weekly:</label>
+							<div class="input-group">
+								<input class="form-control" type="number" id="weekly" readonly>
+							</div>
+						</div>
+						<div class="col-3 mb-5">
+							<label class="form-label">Daily:</label>
+							<div class="input-group">
+								<input class="form-control" type="number" id="daily" readonly>
+							</div>
+						</div>
+						<div class="col-3 mb-5">
+							<label class="form-label">Hourly:</label>
+							<div class="input-group">
+								<input class="form-control" type="number" id="hourly" readonly>
+							</div>
+						</div>
+					</div>
+					<button class="btn btn-primary" onclick="calculate();">Calculate</button>
+				</div>
+			</div>
+			<p>Developed by <a href="https://robertd.co.uk">Robert Dixon</a></p>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>
